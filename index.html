@@ -52,6 +52,7 @@
     <link rel="stylesheet" href="css/sale.css" />
     <link rel="stylesheet" href="css/popular.css" />
     <link rel="stylesheet" href="css/season.css" />
+    <link rel="stylesheet" href="css/conArea.css">
     <link rel="stylesheet" href="css/review.css" />
     <link rel="stylesheet" href="css/community.css" />
     <link rel="stylesheet" href="css/footer.css" />
@@ -557,18 +558,18 @@
             <a href="#" class="section-bt">더보기</a>
           </h2>
           <!-- 새물품 내용 -->
-           <div class="new-wrap clearfix">
+          <div class="new-wrap clearfix">
             <div class="new-left" id="data-new">
               <!-- js출력 -->
             </div>
             <div class="new-right" id="data-new-list">
               <!-- js출력 -->
             </div>
-           </div>
+          </div>
         </div>
       </section>
-       <!-- 추천물품 -->
-       <section class="recommend">
+      <!-- 추천물품 -->
+      <section class="recommend">
         <div class="container">
           <div class="layout-wrap clearfix">
             <div class="layout-left">
@@ -592,33 +593,33 @@
           </div>
         </div>
       </section>
-        <!-- 인기 물품 -->
-        <section class="popular">
-          <div class="container">
-            <h2 class="section-title">
-              지금 가장 많이 이용하는 <b>인기물품</b>
-              <a href="#" class="popular-more">반려동물 물품 더보기</a>
-            </h2>
-            <!-- 인기 물품 카테고리 아이콘 -->
-            <div class="popular-cate clearfix">
-              <div class="popular-slide-prev">
-                <span>이전</span>
-              </div>
-              <div class="popular-slide" id="data-popular-icon">
-                <!-- 외부 인기물품 아이콘 데이터 연동 출력 js -->
-              </div>
-              <div class="popular-slide-next">
-                <span>다음</span>
-              </div>
+      <!-- 인기 물품 -->
+      <section class="popular">
+        <div class="container">
+          <h2 class="section-title">
+            지금 가장 많이 이용하는 <b>인기물품</b>
+            <a href="#" class="popular-more">반려동물 물품 더보기</a>
+          </h2>
+          <!-- 인기 물품 카테고리 아이콘 -->
+          <div class="popular-cate clearfix">
+            <div class="popular-slide-prev">
+              <span>이전</span>
             </div>
-            <!-- 인기 물품 목록 -->
-            <div class="good-wrap no-mb" id="data-popular">
-              <!-- 외부 인기물품 데이터 연동 출력 js -->
+            <div class="popular-slide" id="data-popular-icon">
+              <!-- 외부 인기물품 아이콘 데이터 연동 출력 js -->
+            </div>
+            <div class="popular-slide-next">
+              <span>다음</span>
             </div>
           </div>
-        </section>
-       <!-- 브랜드관 -->
-       <section class="brand">
+          <!-- 인기 물품 목록 -->
+          <div class="good-wrap no-mb" id="data-popular">
+            <!-- 외부 인기물품 데이터 연동 출력 js -->
+          </div>
+        </div>
+      </section>
+      <!-- 브랜드관 -->
+      <section class="brand">
         <div class="container">
           <div class="layout-wrap clearfix">
             <div class="layout-left">
@@ -646,8 +647,8 @@
           </div>
         </div>
       </section>
-       <!-- 배너 -->
-       <section class="banner">
+      <!-- 배너 -->
+      <section class="banner">
         <div class="container">
           <div class="banner-slide" id="data-banner">
             <!-- js출력 -->
@@ -657,9 +658,117 @@
         </div>
       </section>
       <!-- 제출요리 -->
-      <section class="season"></section>
+      <section class="season">
+        <div class="container">
+          <h2 class="section-title">제철제맛 가득한 <b>요리</b></h2>
+          <div class="season-wrap clearfix">
+            <div class="season-left">
+              <a href="#">
+                <img src="images/cook_main.jpg" alt="요리" />
+                <div class="season-info">
+                  <h3>요리방법</h3>
+                  <p>
+                    <span>촉촉 황태채와 탱글탱글 도토리면을 호로록</span>
+                    <b>황태채 도토리비빔면</b>
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div class="season-right">
+              <div class="season-list">
+                <ul class="season-good-list" id="data-season" data-scrollbar>
+                  <!-- 외부 제철요리 데이터 연동 출력 js -->
+                </ul>
+              </div>
+              <div class="season-total">
+                <div class="season-good-total">
+                  <input type="checkbox" id="chkall" class="season-good-check" />
+                  <label for="chkall" class="season-label">라벨</label>
+                  전체 선택 <em id="buy-total">5</em>개
+                </div>
+                <a href="#" class="buy-good"> 총 <em id="buy-total-money">49,500</em>원 바구니 담기 </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <!-- 이용후기 -->
-      <section class="review"></section>
+      <section class="review">
+        <div class="container">
+          <div class="layout-wrap clearfix">
+            <div class="layout-left">
+              <h2 class="section-title section-bar">
+                조합원의 생생한<br />
+                <b>이용후기</b>
+              </h2>
+              <p class="section-title-text">
+                이웃 조합원은 <br />
+                어떤 물품을 구매했을까요?
+              </p>
+              <div class="slide-control">
+                <div class="slide-pg">1/4</div>
+                <button class="slide-prev">이전</button>
+                <button class="slide-next">다음</button>
+              </div>
+            </div>
+            <div class="layout-right">
+              <!-- 이용후기 슬라이드 -->
+              <div class="review-slide" id="data-review">
+                <!-- 외부 리뷰 데이터 연동 출력 js -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 배송 -->
+       <section class="mainNavi">
+        <div class="container">
+          <ul class="conArea">
+            <li class="naviItem tagNew">
+              <!-- 'New'택 생성: 클래스'tagNew'기입 -->
+              <a href="#">
+                <dl class="naviItemText icon04">
+                  <dt>정기공급</dt>
+                  <dd>늘 이용하는 물품<br />주문 한번에 계속 받아보세요.</dd>
+                </dl>
+              </a>
+            </li>
+            <li class="naviItem">
+              <a href="#">
+                <dl class="naviItemText icon01">
+                  <dt>택배공급</dt>
+                  <dd>가족, 지인 집으로<br />물품을 보내보세요.</dd>
+                </dl>
+              </a>
+            </li>
+            <li class="naviItem">
+              <a href="#">
+                <dl class="naviItemText icon02">
+                  <dt>사전예약</dt>
+                  <dd>시즌 물품들을<br />예약하고 받아보세요.</dd>
+                </dl>
+              </a>
+            </li>
+            <li class="naviItem">
+              <a href="#">
+                <dl class="naviItemText icon03">
+                  <dt>산지직송</dt>
+                  <dd>생산지에서<br />바로 보내드려요.</dd>
+                </dl>
+              </a>
+            </li>
+            <li class="naviItem">
+              <a href="#">
+                <dl class="naviItemText icon05">
+                  <dt>매장배달</dt>
+                  <dd>근처 매장에서<br />오늘 바로 보내드려요.</dd>
+                </dl>
+              </a>
+            </li>
+          </ul>
+         </div>
+       </section>
+       
       <!-- 커뮤니티 -->
       <section class="community"></section>
       <!-- 하단 -->

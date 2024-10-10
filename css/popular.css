@@ -3,10 +3,10 @@
   position: relative;
   display: block;
 }
-.popular-cate{
-    position: relative;
-    display: block;
-    margin-bottom: 40px;
+.popular-cate {
+  position: relative;
+  display: block;
+  margin-bottom: 40px;
 }
 .popular-more {
   position: absolute;
@@ -84,15 +84,12 @@
   display: block;
   width: 140px;
   height: 140px;
-  background-color: #f9f9f9;
   overflow: hidden;
+  background-color: #f9f9f9;
   border: 2px solid rgba(0, 0, 0, 0);
-  /* transition: all 0.2s; */
+  
 }
-.popular-slide a:hover{
-  background-color: #fff;
-  border: 2px solid #76bd42;
-}
+
 .popular-cate-icon {
   position: relative;
   display: block;
@@ -100,6 +97,7 @@
   height: 65px;
   margin: 15px auto;
 }
+
 .popular-cate-name {
   position: relative;
   display: block;
